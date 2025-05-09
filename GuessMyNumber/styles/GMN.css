@@ -64,7 +64,7 @@
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
-  animation: slide 90s infinite linear;
+  animation: slide 60s infinite linear;
   height: 100%;
   position: absolute;
   bottom: 0;
