@@ -37,7 +37,8 @@ const updateHighscore = () => {
     }
 };
 
-checkBtn.addEventListener('click', () => {
+checkBtn.addEventListener('click', checkFunc);
+function checkFunc(){
     const guess = Number(guessInput.value);
 
     if (!guess) {
@@ -79,7 +80,7 @@ checkBtn.addEventListener('click', () => {
             screenCrackOverlay.style.opacity = 1;
         }
     }
-});
+}
 
 playAgainBtn.addEventListener('click', startGame);
 
