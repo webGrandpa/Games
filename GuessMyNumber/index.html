@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess My Number</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="./script.js" defer></script>
+  <script src="./animation.js" defer></script>
+  <link rel="stylesheet" href="./styles/styles.css">
+   <link rel="stylesheet" href="/GuessMyNumber/styles/GMN.css">
+</head>
+<body>
+  <div class="cloud-viewport">
+    <div class="cloud-track">
+        <div class="cloud-set">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+        </div>
+         <div class="cloud-set">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+            <img src="./img/cloud.png" alt="Cloud">
+        </div>
+    </div>
+</div>
+
+  <div class="container">
+      <h1>Guess My Number!</h1>
+      <div class="game-area">
+          <input type="number" class="guess-input" min="1" max="20">
+          <button class="check-btn">Check!</button>
+      </div>
+      <p class="message">Start guessing...</p>
+      <div class="score-area">
+          <p class="score">Score: <span class="score-value">20</span></p>
+          <p class="highscore">Highscore: <span class="highscore-value">0</span></p>
+      </div>
+      <button class="play-again-btn">Play Again!</button>
+  </div>
+
+  <div class="ground-viewport">
+      <div class="road-track">
+        <div class="road-set">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+        </div>
+        <div class="road-set">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+            <img src="/GuessMyNumber/img/road.jpg" alt="Road">
+        </div>
+    </div>
+    <div class="road-elements-track">
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+         <div class="road-element-set">
+            <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+             <img src="./img/pipe_mario.png" alt="Pipe" class="road-element pipe">
+            <img src="./img/Hill.png" alt="Hill" class="road-element hill">
+            <img src="./img/small_tree.png" alt="Tree" class="road-element tree">
+        </div>
+    </div>
+</div>
+
+  <div class="screen-crack-overlay"></div>
+
+</body>
+</html>

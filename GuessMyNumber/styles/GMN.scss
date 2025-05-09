@@ -1,0 +1,136 @@
+
+//||Cloud 
+.cloud-viewport {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    background: transparent;
+    z-index: 5;
+
+    .cloud-track {
+        display: flex;
+        width: 200%;
+        animation: cloud-slide 60s infinite linear;
+        height: 100%;
+        position: relative;
+
+        .cloud-set {
+            display: flex;
+            flex-shrink: 0;
+            height: 100%;
+            position: relative;
+            width: 100%;
+
+            img {
+                height: auto;
+                width: 180px;
+                margin: 0;
+                display: block;
+                flex-shrink: 0;
+                object-fit: contain;
+                position: absolute;
+               
+            }
+        }
+    }
+}
+
+@keyframes cloud-slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+//||Ground
+.ground-viewport {
+    width: 100%;
+    // overflow: hidden;
+    position: fixed;
+    bottom: -231px;
+    left: 0;
+    height: 84px;
+    background: transparent;
+    z-index: 10;
+    position: relative;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+//||road images
+.road-track {
+    display: flex;
+    width: fit-content;
+    animation: slide 90s infinite linear;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    .road-set {
+        display: flex;
+        flex-shrink: 0;
+        height: 100%;
+
+        > img {
+            height: 84px;
+            width: 48px;
+            margin: 0;
+            display: block;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+//||road elements
+.road-elements-track {
+    display: flex;
+    width: 200%;
+    animation: slide 60s infinite linear;
+    height: 84px;
+    position: absolute;
+    bottom: 84px;
+    z-index: 11;
+
+     .road-element-set {
+        display: flex;
+        flex-shrink: 0;
+        height: 100%;
+        position: relative;
+        width: 100%;
+     }
+
+    .road-element {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .pipe {
+        height: 70px;
+    }
+
+    .hill {
+        height: 50px;
+    }
+
+    .tree {
+        height: 60px;
+    }
+}
+
