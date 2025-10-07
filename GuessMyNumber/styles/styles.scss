@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    max-height: 100vh;
     position: relative;
     overflow: hidden;
     transition: background-color 0.5s ease, color 0.5s ease;
